@@ -114,7 +114,21 @@ body{
     border:2px solid black;
     border-radius:5px;
     box-shadow:2px 2px  6px black, 0px 0px 6px whitesmoke;
+    animation-name:scale;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
 
+}
+@keyframes scale {
+    0%{
+       transform:scale(0);
+       opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+    
 }
 .sale-image__title{
     font-size:30px;
@@ -141,8 +155,7 @@ body{
     width:450px;
 }
 .sale-image div:hover{
-    transform:scale(1.03);
-    transition:1s;
+    cursor:pointer;
 }
 .recommended{
     padding:10px;
