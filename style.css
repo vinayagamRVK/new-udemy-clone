@@ -168,7 +168,9 @@ body{
 
 }
 .course-card{
-    width:250px;
+    flex-grow:1;
+    flex-basis:20%;
+    margin:5px;
     cursor:pointer;
 }
 .course-card:hover{
@@ -229,6 +231,52 @@ body{
 .footer__one__s1 >p , .footer__one__s2 > p{
     margin-top:10px;
     font-size:18px;
+}
+/* media queries */
+@media screen and (max-width:800px){
+    body{
+        font-size:10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis:40%;
+    }
+}
+@media  screen and (max-width:600px) {
+    .categories{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap:5px;
+    }
+    .categories p{
+        flex-basis:25%;
+        text-align:center;
+        height:fit-content;
+    }
+    .navbar__s2 input{
+        width:150px;
+    }
+
+    .sale-image div{
+        font-size:10px;
+        width:70%;
+        height:fit-content;
+             
+        padding:5px;
+        top:10px;
+        left:15px;
+        bottom:0;
+        
+    }
+    .sale-image div h3{
+        font-size:25px;
+    }
+    .sale-image div button{
+        position:relative;
+        bottom:5px;
+    }
+    
 }
 
 
